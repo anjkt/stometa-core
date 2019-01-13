@@ -1,6 +1,6 @@
 import pandas as pd
 
-df =  pd.read_csv('datasheet.csv',sep="~")
+df =  pd.read_csv('teraterm.csv',sep="~")
 df2 = pd.DataFrame(columns=['a','b','c','d','e','f','g','h'])
 for index, row in df.iterrows():
 	#Main Algo
@@ -15,3 +15,5 @@ for index, row in df.iterrows():
     df2 = pd.Series({'Area':a, 'Yeild':b,'Crop Amount':c,'Expecting Amount':d,'Fertility':e,'Efficiency':f,'Quality':g,'Credit Score':h})
 
 print(df2)
+
+# print(df)
